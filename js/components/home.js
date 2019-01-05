@@ -37,7 +37,7 @@ class Home extends React.Component{
         }
         else{
             return(
-                <div>{this.getAllposts()}</div>
+                <div className="main">{this.getAllposts()}</div>
             )
         }
 
