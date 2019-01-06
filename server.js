@@ -32,7 +32,8 @@ const compiler = webpack({
 const app = new WebpackDevServer(compiler, {
   contentBase: '/public/',
   publicPath: '/js/',
-  stats: { colors: true },
+  clientLogLevel:"info",
+  stats: { colors: true,log:true },
 });
 
 app.use('/graphql', graphqlHTTP({
@@ -41,5 +42,4 @@ app.use('/graphql', graphqlHTTP({
   graphiql: true,
 }));
 app.use('/', express.static(path.resolve(__dirname, 'public')));
-
-app.listen(5000, () => console.log('Now browse to localhost:4000/graphql'));
+app.listen(4000, () => console.log('Now browse to localhost:4000/graphql'));

@@ -1,18 +1,56 @@
+* {
+    direction: rtl;
+}
 #root {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
     text-align: center;
 }
 .main {
-
+    width: 50%;
 }
 .post p{
-    
+    float: right; 
     direction: rtl;
 }
+.main-header{
+    font-size:36px;
+    text-align: right;
+}
+.main-header img{
+    width: 100px;
+    border-radius: 50%;
+    
+    
+}
+.post-header{
+    font-size:20px;
+    text-align: right;
+}
+.post-body{
+    float: right;
+    text-align: right;
+}
 
-.comments {
+.photo{
+    width: 100%;
+    float: right;
+}
+.post{
+    float: right;
+    margin-top:20px;
+}
 
+.comments-frame {
+    float: right;
+    text-align: right;
 }
 
 .comment{
 
+}
+.avatar {
+    border-radius: 50%;
+    width: 40px;
 }

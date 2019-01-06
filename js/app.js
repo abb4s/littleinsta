@@ -1,10 +1,10 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import Home from './components/home'
+import PostsList from './components/postlists'
 
 
 ReactDOM.render(
-  <Home />,
+  <PostsList />,
   document.getElementById('root')
 );
 
